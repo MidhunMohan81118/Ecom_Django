@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'Accounts',
     'Store',
     'Cart',
+    'Orders',
+    'paypal.standard.ipn',
 ]
 
 MIDDLEWARE = [
@@ -162,3 +164,8 @@ EMAIL_HOST_USER = 'midhunmohan81118@gmail.com'
 EMAIL_HOST_PASSWORD = 'slrx iuqx yaqf pied'
 DEFAULT_FROM_EMAIL = 'midhunmohan81118@gmail.com'
 EMAIL_USE_TLS = True
+
+
+# Adding Paypal settings
+PAYPAL_TEST=True
+PAYPAL_RECEIVER_EMAIL='midhun19mohan96@gmail.com' #bussiness email in sandbox
